@@ -1,0 +1,234 @@
+TITLE - 
+CSS - Introduction CSS is the language we use to style a Web page.
+CSS stands for Cascading Style Sheets
+CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+CSS saves a lot of work. It can control the layout of multiple web pages all at once
+External stylesheets are stored in CSS files
+
+CODE - 
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+
+DESCRIPTION - 
+HTML was NEVER intended to contain tags for formatting a web page!
+HTML was created to describe the content of a web page, like:
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+When tags like <font>, and color attributes were added to the HTML 3.2 specification, it started a nightmare for web developers. Development of large websites, where fonts and color information were added to every single page, became a long and expensive process.
+To solve this problem, the World Wide Web Consortium (W3C) created CSS.
+CSS removed the style formatting from the HTML page!
+
+USER_ID - 2
+
+ATTRIBUTION - 
+https://www.w3schools.com/
+
+
+TITLE - 
+CSS - Selectors CSS selectors are used to "find" (or select) the HTML elements you want to style.
+We can divide CSS selectors into five categories:
+Simple selectors (select elements based on name, id, class)
+Combinator selectors (select elements based on a specific relationship between them)
+Pseudo-class selectors (select elements based on a certain state)
+Pseudo-elements selectors (select and style a part of an element)
+Attribute selectors (select elements based on an attribute or attribute value)
+This page will explain the most basic CSS selectors.
+
+CODE -
+p {
+  text-align: center;
+  color: red;
+}
+
+DESCRIPTION - 
+Here, all <p> elements on the page will be center-aligned, with a red text color: 
+
+USER_ID - 2
+
+ATTRIBUTION - 
+https://www.w3schools.com/
+
+
+TITLE - 
+CSS Colors
+Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.
+CSS/HTML support 140 standard color names.
+
+CODE -
+<h1 style="background-color:DodgerBlue;">Hello World</h1>
+<p style="background-color:Tomato;">Lorem ipsum...</p>
+
+DESCRIPTION - 
+You can set the background color for HTML elements:
+
+USER_ID - 2
+
+ATTRIBUTION - 
+https://www.w3schools.com/
+
+TITLE - 
+CSS Margins
+Margins are used to create space around elements, outside of any defined borders.
+The CSS margin properties are used to create space around elements, outside of any defined borders.
+With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element (top, right, bottom, and left).
+Margin - Individual Sides
+CSS has properties for specifying the margin for each side of an element:
+margin-top
+margin-right
+margin-bottom
+margin-left
+All the margin properties can have the following values:
+auto - the browser calculates the margin
+length - specifies a margin in px, pt, cm, etc.
+% - specifies a margin in % of the width of the containing element
+inherit - specifies that the margin should be inherited from the parent element
+Tip: Negative values are allowed.
+
+CODE -
+p {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+}
+
+DESCRIPTION - 
+Set different margins for all four sides of a <p> element:
+
+USER_ID - 2
+
+ATTRIBUTION - 
+https://www.w3schools.com/
+
+_____________________________________________________________
+
+TITLE - CSS Text
+CODE - 
+body {
+  background-color: lightgrey;
+  color: blue;
+}
+
+h1 {
+  background-color: black;
+  color: white;
+}
+
+div {
+  background-color: blue;
+  color: white;
+}
+
+DESCRIPTION - CSS has a lot of properties for formatting text.
+The color property is used to set the color of the text. The color is specified by:
+a color name - like "red"
+a HEX value - like "#ff0000"
+an RGB value - like "rgb(255,0,0)"
+Look at CSS Color Values for a complete list of possible color values.
+
+The default text color for a page is defined in the body selector.
+USER_ID - 2
+ATTRIBUTION - https://www.w3schools.com/
+
+
+TITLE - CSS Fonts
+CODE - 
+.p1 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.p2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.p3 {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+DESCRIPTION - 
+In CSS there are five generic font families:
+Serif fonts have a small stroke at the edges of each letter. They create a sense of formality and elegance.
+Sans-serif fonts have clean lines (no small strokes attached). They create a modern and minimalistic look.
+Monospace fonts - here all the letters have the same fixed width. They create a mechanical look. 
+Cursive fonts imitate human handwriting.
+Fantasy fonts are decorative/playful fonts.
+All the different font names belong to one of the generic font families. 
+The font-family property should hold several font names as a "fallback" system, to ensure maximum compatibility between browsers/operating systems. Start with the font you want, and end with a generic family (to let the browser pick a similar font in the generic family, if no other fonts are available). The font names should be separated with comma.
+Specify some different fonts for three paragraphs:
+USER_ID - 
+ATTRIBUTION - https://www.w3schools.com/
+
+
+TITLE - CSS Lists
+CODE -
+ul.a {
+  list-style-type: circle;
+}
+
+ul.b {
+  list-style-type: square;
+}
+
+ol.c {
+  list-style-type: upper-roman;
+}
+
+ol.d {
+  list-style-type: lower-alpha;
+}
+DESCRIPTION - In HTML, there are two main types of lists:
+unordered lists (<ul>) - the list items are marked with bullets
+ordered lists (<ol>) - the list items are marked with numbers or letters
+The CSS list properties allow you to:
+
+Set different list item markers for ordered lists
+Set different list item markers for unordered lists
+Set an image as the list item marker
+Add background colors to lists and list items
+The list-style-type property specifies the type of list item marker.
+The following example shows some of the available list item markers:
+
+USER_ID - 2
+ATTRIBUTION - https://www.w3schools.com/
+
+
+
+TITLE - CSS Margins
+CODE -
+p {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+}
+DESCRIPTION - Margins are used to create space around elements, outside of any defined borders. The CSS margin properties are used to create space around elements, outside of any defined borders.
+With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element (top, right, bottom, and left).
+Margin - Individual Sides
+CSS has properties for specifying the margin for each side of an element:
+margin-top
+margin-right
+margin-bottom
+margin-left
+All the margin properties can have the following values:
+auto - the browser calculates the margin
+length - specifies a margin in px, pt, cm, etc.
+% - specifies a margin in % of the width of the containing element
+inherit - specifies that the margin should be inherited from the parent element
+Tip: Negative values are allowed.
+USER_ID - 2
+ATTRIBUTION - https://www.w3schools.com/
+
+
+
+
+

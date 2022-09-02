@@ -1,0 +1,108 @@
+TITLE - Select
+CODE -  SELECT column_name(s)
+	FROM table_name;
+
+DESCRIPTION - When we use a SELECT statement, we want to be sure to indicate which table we are selecting from. To select multiple columns, separate them with commas. To select all columns from a table, use the "*" descriptor.
+ATTRIBUTION - awahba
+
+TITLE - Where
+CODE - 	SELECT column_name(s)
+	FROM table_name
+	WHERE boolean_condition = true;
+
+DESCRIPTION - Sometimes we want to limit the number of rows we select from a table; the WHERE statement helps us with this. The WHERE statement must be a boolean condition such as "=" or "<". Note that in SQL, the "=" sign is used in place of an equality (as opposed to "==" in Java for example). The following are examples of boolean operators: <, >, =, <=, >=, !=. Note that "!=" works for numerical comparisons, but IS NOT is needed for varchar values.
+ATTRIBUTION - awahba
+
+TITLE - And
+CODE -  SELECT column_name(s)
+	FROM table_name
+	WHERE boolean_condition AND another_boolean_condition;
+
+DESCRIPTION - When needing to compare multiple boolean conditions at once, an AND operator may be used. In this case, both boolean conditions must be true for the select to return the desired rows from the table.
+ATTRIBUTION - awahba
+
+TITLE - Or
+CODE -  SELECT column_name(s)
+	FROM table_name
+	WHERE boolean_condition OR boolean_condition;
+
+DESCRIPTION - In the case where one of two boolean conditions needs to be true, an OR operator may be used. In this example, only one or both of the boolean conditions need be true to return the desired rows from the table. Only when both are false will the row not be returned.
+ATTRIBUTION - awahba
+
+TITLE - In
+CODE - 	SELECT column_name(s)
+	FROM table_name
+	WHERE column_name IN (value1, value2, ...);
+DESCRIPTION - Similar to OR, IN allows you to select multiple values in a WHERE clause. IN is a shorthand for multiple OR statments. Note that the parenthesis around the values are mandatory. You can use NOT IN for the opposite selection.
+ATTRIBUTION - awahba
+
+TITLE - Like and ILike
+CODE -  SELECT column_name(s)
+	FROM table_name
+	WHERE column_to_select_from LIKE 'x';
+DESCRIPTION - When using a search-like function, SQL allows the use of LIKE to select rows with values containing the result. The use of "%" can be used as a wildcard placeholder at the beginning or end of the selection to specify the search begins or ends with the element. For example, the selection '%Smith' will return all rows in the selected column where the value ends with "Smith". This will return elements such as "John Smith" or "WordSmith". You can include "%" before and after the element to search for internal terms. A search with "%or%" will return "Moreno". ILIKE functions as LIKE, but is case insensitive.
+ATTRIBUTION - awahba
+
+TITLE - Between
+CODE -  SELECT column_name(s)
+	FROM table_name
+	WHERE column_to_search BETWEEN var1 AND var2;
+DESCRIPTION - Finds rows in the selected columns from the indicated table that are between var1 and var2 inclusively.
+ATTRIBUTION - awahba
+
+
+_______________________________________________________________________
+
+title: SQL Joins
+code:
+SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate
+FROM Orders
+INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;
+des: A JOIN clause is used to combine rows from two or more tables, based on a related column between them.
+Different Types of SQL JOINs
+Here are the different types of the JOINs in SQL:
+(INNER) JOIN: Returns records that have matching values in both tables
+LEFT (OUTER) JOIN: Returns all records from the left table, and the matched records from the right table
+RIGHT (OUTER) JOIN: Returns all records from the right table, and the matched records from the left table
+FULL (OUTER) JOIN: Returns all records when there is a match in either left or right table
+user:
+attri: https://www.w3schools.com/
+
+
+title: SQL PRIMARY KEY Constraint
+code:
+CREATE TABLE Persons (
+    ID int NOT NULL,
+    LastName varchar(255) NOT NULL,
+    FirstName varchar(255),
+    Age int,
+    PRIMARY KEY (ID)
+);
+des: The PRIMARY KEY constraint uniquely identifies each record in a table.
+Primary keys must contain UNIQUE values, and cannot contain NULL values.
+A table can have only ONE primary key; and in the table, this primary key can consist of single or multiple columns (fields).
+The following SQL creates a PRIMARY KEY on the "ID" column when the "Persons" table is created:
+user:
+attri: https://www.w3schools.com/
+
+
+title: SQL UPDATE Statement
+code:
+UPDATE Customers
+SET ContactName = 'Alfred Schmidt', City= 'Frankfurt'
+WHERE CustomerID = 1;
+
+WHERE condition;
+des: The UPDATE statement is used to modify the existing records in a table.
+Be careful when updating records in a table! Notice the WHERE clause in the UPDATE statement. The WHERE clause specifies which record(s) that should be updated. If you omit the WHERE clause, all records in the table will be updated!
+user:
+attri: https://www.w3schools.com/
+
+
+title: SQL DELETE Statement
+code: DELETE FROM Customers WHERE CustomerName='Alfreds Futterkiste';
+des: The DELETE statement is used to delete existing records in a table.
+It is possible to delete all rows in a table without deleting the table. This means that the table structure, attributes, and indexes will be intact:
+user:
+attri: https://www.w3schools.com/
+

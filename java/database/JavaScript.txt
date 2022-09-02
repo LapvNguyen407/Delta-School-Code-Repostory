@@ -1,0 +1,166 @@
+TITLE - JavaScript Introduction
+
+CODE - 
+
+DESCRIPTION - JavaScript is the world's most popular programming language.
+JavaScript is the programming language of the Web.
+JavaScript is easy to learn.
+JavaScript is one of the 3 languages all web developers must learn:
+   1. HTML to define the content of web pages
+   2. CSS to specify the layout of web pages
+   3. JavaScript to program the behavior of web pages
+
+ATTRIBUTION - https://www.w3schools.com/
+
+
+
+TITLE  - JavaScript Statements
+
+CODE -  document.getElementById("demo").innerHTML = "Hello Dolly.";
+
+DESCRIPTION - JavaScript statements are composed of:
+Values, Operators, Expressions, Keywords, and Comments.
+This statement tells the browser to write "Hello Dolly." inside an HTML element with id="demo":
+Most JavaScript programs contain many JavaScript statements.
+The statements are executed, one by one, in the same order as they are writtenSemicolons separate JavaScript statements.
+Add a semicolon at the end of each executable statement:
+
+ATTRIBUTION - https://www.w3schools.com/
+
+TITLE - JavaScript Variables
+
+CODE -
+var x = 5;
+var y = 6;
+var z = x + y;
+
+DESCRIPTION - 
+4 Ways to Declare a JavaScript Variable:
+Using var
+Using let
+Using const
+Using nothing
+
+Always declare JavaScript variables with var,let, orconst.
+The var keyword is used in all JavaScript code from 1995 to 2015.
+The let and const keywords were added to JavaScript in 2015.
+If you want your code to run in older browser, you must use var.
+
+ATTRIBUTION - https://www.w3schools.com/
+
+
+TITLE - JavaScript Operators
+
+CODE 
+let x = 10;
+
+let x = 5;
+let y = 2;
+let z = x + y;
+
+let x = 5;
+let y = 2;
+let z = x * y;
+
+DESCRIPTION 
+
+The assignment operator (=) assigns a value to a variable.
+The addition operator (+) adds numbers:
+The multiplication operator (*) multiplies numbers.
+ 
+ATTRIBUTION 
+https://www.w3schools.com/
+
+
+TITLE JavaScript Objects
+
+CODE 
+const car = {type:"Fiat", model:"500", color:"white"};
+
+DESCRIPTION 
+Real Life Objects, Properties, and Methods
+In real life, a car is an object.
+A car has properties like weight and color, and methods like start and stop:
+All cars have the same properties, but the property values differ from car to car.
+All cars have the same methods, but the methods are performed at different times.
+You have already learned that JavaScript variables are containers for data values.
+This code assigns a simple value (Fiat) to a variable named car:
+
+
+ATTRIBUTION 
+https://www.w3schools.com/
+
+ -------------------------------------------------------------------------------------------------
+
+
+
+title: JavaScript Let
+
+code: 
+let x = "John Doe";
+
+let x = 0;
+
+// SyntaxError: 'x' has already been declared
+
+des: The let keyword was introduced in ES6 (2015).
+Variables defined with let cannot be Redeclared.
+Variables defined with let must be Declared before use.
+Variables defined with let have Block Scope.
+Variables defined with let cannot be redeclared.
+You cannot accidentally redeclare a variable.
+
+user: 2
+
+attrib: https://www.w3schools.com/
+
+
+
+title - JavaScript Arrays
+code
+const cars = [
+  "Saab",
+  "Volvo",
+  "BMW"
+];
+des = Using an array literal is the easiest way to create a JavaScript Array.
+It is a common practice to declare arrays with the const keyword.
+Spaces and line breaks are not important. A declaration can span multiple lines:
+
+user: 2
+attrib: https://www.w3schools.com/
+
+
+
+title - JavaScript if, else, and else if
+code -
+if (hour < 18) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+
+des - Conditional statements are used to perform different actions based on different conditions.
+Very often when you write code, you want to perform different actions for different decisions.
+You can use conditional statements in your code to do this.
+In JavaScript we have the following conditional statements:
+Use if to specify a block of code to be executed, if a specified condition is true
+Use else to specify a block of code to be executed, if the same condition is false
+Use else if to specify a new condition to test, if the first condition is false
+Use switch to specify many alternative blocks of code to be executed
+user: 2
+attrib: https://www.w3schools.com/
+
+
+
+
+
+title : JavaScript Strings
+code
+let carName1 = "Volvo XC60";  // Double quotes
+let carName2 = 'Volvo XC60';  // Single quotes
+des A JavaScript string is zero or more characters written inside quotes.
+user: 2
+attrib: https://www.w3schools.com/
+
+
